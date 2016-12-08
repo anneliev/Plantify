@@ -8,9 +8,10 @@
 </head>
 <body>
 	<header>
-		<figure>
-			<img src="pics/logo_green.png" alt="Plantify logo">
-		</figure>
+		<picture class="logo">
+			<source media="(min-width: 600px)" srcset="pics/logo-large.png">
+			<img src="pics/logo-small.png" alt="Plantify logo">
+		</picture>
 		<h1>Plantify</h1>		
 	</header>
 	<nav>
@@ -34,15 +35,17 @@
 	<main class="main">
 		<h2 class="freeh2">Plantifys mission</h2>
 		<div class="home">
-			<figure class="left-plant">
-				<img src="pics/plants-left.jpg" alt="plants">
-			</figure>
+			<picture class="left-plant">
+				<source media="(min-width: 1250px)" srcset="pics/plants-left-large.jpg">  
+				<img src="pics/plants-left-small.jpg" alt="plants">
+			</picture>
 				<p class="home-p">
 					Plantify is a subscription service for your company. We offer to expertly decorate your office with plants. Choose one of our uniqe themes and get your office more alive (or dead) today!
 				</p>
-			<figure class="right-plant">
-				<img src="pics/plants-right.jpg" alt="plants">
-			</figure>
+			<picture class="right-plant">
+				<source media="(min-width: 1250px)" srcset="pics/plants-right-large.jpg">
+				<img src="pics/plants-right-small.jpg" alt="plants">
+			</picture>
 		</div>
 	</main>
 	<footer>

@@ -36,7 +36,7 @@ a{
 a:hover, a:active{
 	color: #cad593;
 }
-figure{
+picture{
 	margin: 0;
 	padding: 0;
 }
@@ -47,14 +47,17 @@ header{
 	padding:0;
 	display: flex;
 	flex-flow: row wrap;
-	background: url("pics/plant-earth-head3.jpg");
-	background-size: 100%;
+	background: url("pics/plant-head-large.jpg");
 	background-position: center center;
+	
 }
-
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 h1{
 	margin: 1%;
-	
 	padding: 0;
 	font-family: "montserrat", sans-serif;
 	font-size: 5em;
@@ -120,9 +123,7 @@ h2{
 	width: 80%;
 	margin-bottom: 9em;
 }
-.home img{
-	width: 16rem;
-}
+
 
 /*index, prices, contact*/
 .main{
@@ -160,17 +161,16 @@ h2{
 	display: flex;
 	justify-content: center;	
 }
-.plant-small figure{
+.plant-small picture{
 	width: 100%;
 	height: 100%;
 }
 
 .aloha{
 	width: 50%;
-	height: 9%s;
 	margin-bottom: 6em;
 	margin-top: 3em;
-	background: url("pics/coconuts3.jpg");
+	background: url("pics/coconut-large.jpg");
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -179,7 +179,6 @@ h2{
 }
 .tundra{
 	width: 50%;
-	height: 15%;
 	margin-bottom: 6em;
 	background: url("pics/tundra4.jpg");
 	display: flex;
@@ -190,7 +189,6 @@ h2{
 }
 .nordic{
 	width: 50%;
-	height: 15%;
 	margin-bottom: 6em;
 	background: url("pics/tallskog2.jpg");
 	display: flex;
@@ -202,7 +200,7 @@ h2{
 
 /*h2 storlek och färg för themes*/
 .themesh2{
-	font-size: 4em;
+	font-size: 3em;
 	color: #FFF;
 	margin: 2%;
 }
@@ -286,22 +284,15 @@ th{
 ul{
 	list-style: none;
 }
-@media (max-width: 30em){
-	header{
-		background-size: 300%;
-	}
+@media (max-width: 36em){
 	h1{
 		font-size: 3em;
-		margin: 5% 0 0 0;
+		margin: 2%;
 		letter-spacing: 0;
 	}
-	header figure{
-		height:50%;
-		width: 25%;
-	}
-	header img{
-		width: 80%;
-		height: 80%
+	header{
+		background: url("pics/plant-head-small.jpg");
+		background-position: center center;
 	}
 	.navbar{
 		display: none;
@@ -331,6 +322,19 @@ ul{
 		display: flex;
 		flex-direction: column;
 	}
+	.left-plant img{
+		display: none;
+	}
+	.aloha{
+		background: url("pics/coconut-small.jpg");
+	}
+	.tundra{
+		background: url("pics/tundra-small.jpg");
+		width: 70%;
+	}
+	.nordic{
+		background: url("pics/tall-small.jpg");
+	}
 	.themesh2{
 		font-size: 2em;
 	}
@@ -347,71 +351,65 @@ ul{
 		padding: 3%;
 		border: none;
 	}
-	.prices-table{
-	font-size: 0.8em;
+	table, th, td{
+		padding: 0.2em;
+		font-size: 0.9em;
 	}
 	.mail{
 		margin: 2%;
 		padding: 2%;
 	}
-	.left-plant{
-		display: none;
-	}
-	.plant-small img,
-	.right-plant img{
-		width: 60%;
-		height: 60%;
-	}
+	
 	.aloha,
 	.tundra, 
 	.nordic{
 		width: 90%;
 	}
 	
-	.contact figure{
-		width: 80%;
-	}
-	.contact img{
-		width: 100%;
+	
+	footer{
+		font-size: 0.7em;
 	}
 }
-@media (min-width: 31em) and (max-width: 50em){
+@media (min-width: 36em) and (max-width: 60em){
 	header{
-		background-size: 200%;
+		background: url("pics/plant-head-med.jpg");
+		background-position: center center;
 	}
 	h1{
 		font-size: 4em;
-		margin: 5% 0 0 0;
+		margin: 2%;
+	}
+	table, th, td{
+		font-size: 0.9em;
+		padding: 0.2em;
 	}
 	.themesh2{
-		font-size: 3em;
+		font-size: 2.2em;
 	}
 	.home p,
 	.about p,
 	.contact-list, 
 	.prices-table,
-	.aloha, 
-	.tundra,
-	.nordic
 	 {
 		width: 50%;
 		margin:2%;
 		padding: 2%;
 	}
-	.left-plant,
-	.right-plant{
-		width:20%;
-		height: 20%;
+	.aloha{
+		background: url("pics/coconut-med.jpg");
+		width: 70%;
 	}
-	.left-plant img,
-	.right-plant img{
-		width: 100%;
-		height: 100%;
+	
+	.tundra{
+		background: url("pics/tundra-med.jpg");
+		width: 70%;
 	}
-	.plant-small img,
-	.right-plant img{
-		width: 60%;
-		height: 60%;
+	.nordic{
+		background: url("pics/tall-med.jpg");
+		width: 70%;
 	}
-
+	.left-plant img{
+		display: none;
+	}
 }

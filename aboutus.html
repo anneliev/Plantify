@@ -8,9 +8,10 @@
 </head>
 <body>
 	<header>
-		<figure>
-			<img src="pics/logo_green.png" alt="Plantify logo">
-		</figure>
+		<picture class="logo">
+			<source media="(min-width: 600px)" srcset="pics/logo-large.png">
+			<img src="pics/logo-small.png" alt="Plantify logo">
+		</picture>
 		<h1>Plantify</h1>		
 	</header>
 	<nav>
@@ -42,9 +43,11 @@
 					Plantify started in Stockholm in 2016 by Steffe Stickling and Petronella, just Petronella.
 				</p>
 			</div>
-			<figure class="plant-small">
-				<img src="pics/plants-small.jpg" alt="plants">
-			</figure>
+			<picture class="plant-small">
+				<source media="(min-width: 800px)" srcset="pics/plants4-large.jpg">
+				<img src="pics/plants4-small.jpg" alt="plants">
+			
+			</picture>
 		</div>
 	</main>
 	<footer>

@@ -8,9 +8,10 @@
 </head>
 <body>
 	<header>
-		<figure>
-			<img src="pics/logo_green.png" alt="Plantify logo">
-		</figure>
+		<picture class="logo">
+			<source media="(min-width: 600px)" srcset="pics/logo-large.png">
+			<img src="pics/logo-small.png" alt="Plantify logo">
+		</picture>
 		<h1>Plantify</h1>		
 	</header>
 	<nav>
@@ -43,9 +44,10 @@
 					<li>Facebook: Plantify</li>
 					<li>Twitter: @Plantify</li>
 				</ul>
-				<figure>
-					<img src="pics/map.jpg" alt="map">
-				</figure>
+				<picture>
+					<source media="(min-width: 600px)" srcset="pics/map-large.jpg">
+					<img src="pics/map-small.jpg" alt="map">
+				</picture>
 			</div>
 			<div class="contact">
 				<form class="mail">
@@ -58,9 +60,10 @@
 					<textarea rows="7" cols="41" name="message" placeholder="Write you message here"></textarea><br />
 					<input type="submit" name="Send" class="submit">
 				</form>
-				<figure>
+				<picture>
+					<source media="(min-width: 600px)" srcset="pics/plant-large.jpg">
 					<img src="pics/plant-small.jpg" alt="plants">
-				</figure>
+				</picture>
 			</div>
 		</div>
 	</main>
