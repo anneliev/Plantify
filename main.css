@@ -1,0 +1,417 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url('fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ @font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover, a:active{
+	color: #cad593;
+}
+figure{
+	margin: 0;
+	padding: 0;
+}
+
+
+header{
+	margin:0;
+	padding:0;
+	display: flex;
+	flex-flow: row wrap;
+	background: url("pics/plant-earth-head3.jpg");
+	background-size: 100%;
+	background-position: center center;
+}
+
+h1{
+	margin: 1%;
+	
+	padding: 0;
+	font-family: "montserrat", sans-serif;
+	font-size: 5em;
+	letter-spacing: 0.1em;
+	color: #2A3C24;
+	
+}
+
+/*samma font-family och margin för alla h2*/
+h2{
+	margin-top: 1em;
+	font-family: "montserrat", sans-serif;
+	color: #2A3C24;
+}
+
+/*samma font-family, flex, border och padding för alla articles*/
+.home p, .about p{
+	font-family: "open_sansregular", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 0.2em outset;
+	padding: 3em;	
+}
+
+/*navbar och footer har samma storlek*/
+.navbar, .footer{
+	padding: 1em 0em 1em 0em;
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.navbar{
+	background-color: #a1c349;
+	font-family: "montserrat", sans-serif; 
+	font-size: 1.4em;
+}
+.navbar-small{
+	display: none;
+}
+.footer{
+	background-color: #cad593;
+	font-family: 'open_sanslight', sans-serif; 
+	font-size: 1em;
+}
+
+.home-p,
+.p-about
+{
+	width: 35%;
+	height: 40%;
+	margin-bottom: 3em;
+	padding: 0;
+}
+
+.home{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	margin-bottom: 9em;
+}
+.home img{
+	width: 16rem;
+}
+
+/*index, prices, contact*/
+.main{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+/*index och contact*/
+.freeh2{
+	display: flex;
+	align-items: center;
+}
+
+/*prices, themes och about main section*/
+.column{
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.prices-table{
+	margin-top: 3em;
+	margin-bottom: 5em;
+	width: 50%;
+	border: 0.2em outset;
+}
+
+.plant-small{
+	display: flex;
+	justify-content: center;	
+}
+.plant-small figure{
+	width: 100%;
+	height: 100%;
+}
+
+.aloha{
+	width: 50%;
+	height: 9%s;
+	margin-bottom: 6em;
+	margin-top: 3em;
+	background: url("pics/coconuts3.jpg");
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 0.2em outset;
+}
+.tundra{
+	width: 50%;
+	height: 15%;
+	margin-bottom: 6em;
+	background: url("pics/tundra4.jpg");
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 0.2em outset;
+}
+.nordic{
+	width: 50%;
+	height: 15%;
+	margin-bottom: 6em;
+	background: url("pics/tallskog2.jpg");
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 0.2em outset;
+}
+
+/*h2 storlek och färg för themes*/
+.themesh2{
+	font-size: 4em;
+	color: #FFF;
+	margin: 2%;
+}
+
+.about{
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+}
+
+.contact-main {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: flex-start;
+}
+.contact{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	font-family: "open_sansregular", sans-serif;
+}
+
+.contact-list{
+	width: 15em;
+	height: 8em;
+	margin-right: 3em;
+	padding: 3em;
+	border: 0.2em outset;	
+}
+.mail{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 5em;
+	margin-right: 7em;
+	font-family: "open_sansregular", sans-serif;
+}
+.submit{
+	background-color: #98cb00;
+	color: #FFF;
+}
+
+.aloha p, .nordic p, .tundra p{
+	font-family: "open_sansregular", sans-serif;
+	width: 90%;
+	height: 3em;
+	padding: 1.5em;
+	color: #FFF;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.tundra p{
+	color: #000;
+}
+input{
+	width: 22em;
+	height: 2.5em;
+}
+
+textarea, .submit{
+	font-family: "open_sansregular", sans-serif;
+}
+table, th, td{
+	font-family: "open_sansregular", sans-serif;
+	padding: 0.6em;
+	border: 0.02em solid;
+	border-collapse: collapse;
+}
+tr:nth-child(odd){
+	background-color: #cad593;
+}
+th{
+	background-color: #FFF;
+}
+ul{
+	list-style: none;
+}
+@media (max-width: 30em){
+	header{
+		background-size: 300%;
+	}
+	h1{
+		font-size: 3em;
+		margin: 5% 0 0 0;
+		letter-spacing: 0;
+	}
+	header figure{
+		height:50%;
+		width: 25%;
+	}
+	header img{
+		width: 80%;
+		height: 80%
+	}
+	.navbar{
+		display: none;
+	}
+	.navbar-small{	
+		display: flex;
+		flex-direction: column;
+		padding: 1%;
+		border: none;
+		width: 100%;
+		height: 100%;
+		background-color: #a1c349;
+		font-family: "montserrat", sans-serif; 
+		font-size: 1.4em;
+	}
+	.dropdown{
+		display: none;
+		margin: 0;
+		padding: 0;
+		border: none;
+		width: 100%;
+		height: 100%;
+		background-color: #a1c349;
+		font-family: "montserrat", sans-serif; 
+	}
+	.navbar-small:hover .dropdown{
+		display: flex;
+		flex-direction: column;
+	}
+	.themesh2{
+		font-size: 2em;
+	}
+	.home p,
+	.about p,
+	.contact-list, 
+	.prices-table,
+	.aloha, 
+	.tundra,
+	.nordic
+	 {
+		width: 70%;
+		margin:2%;
+		padding: 3%;
+		border: none;
+	}
+	.prices-table{
+	font-size: 0.8em;
+	}
+	.mail{
+		margin: 2%;
+		padding: 2%;
+	}
+	.left-plant{
+		display: none;
+	}
+	.plant-small img,
+	.right-plant img{
+		width: 60%;
+		height: 60%;
+	}
+	.aloha,
+	.tundra, 
+	.nordic{
+		width: 90%;
+	}
+	
+	.contact figure{
+		width: 80%;
+	}
+	.contact img{
+		width: 100%;
+	}
+}
+@media (min-width: 31em) and (max-width: 50em){
+	header{
+		background-size: 200%;
+	}
+	h1{
+		font-size: 4em;
+		margin: 5% 0 0 0;
+	}
+	.themesh2{
+		font-size: 3em;
+	}
+	.home p,
+	.about p,
+	.contact-list, 
+	.prices-table,
+	.aloha, 
+	.tundra,
+	.nordic
+	 {
+		width: 50%;
+		margin:2%;
+		padding: 2%;
+	}
+	.left-plant,
+	.right-plant{
+		width:20%;
+		height: 20%;
+	}
+	.left-plant img,
+	.right-plant img{
+		width: 100%;
+		height: 100%;
+	}
+	.plant-small img,
+	.right-plant img{
+		width: 60%;
+		height: 60%;
+	}
+
+}
